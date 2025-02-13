@@ -2,7 +2,7 @@
 
 ## Kobo: reset CSS
 
-A simple CSS file to resest the style of yours EPUB.
+A simple CSS file to reset the style of yours EPUB.
 
 ## Released under MIT License
 
