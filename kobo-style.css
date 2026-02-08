@@ -77,7 +77,7 @@ p {
 	-webkit-hyphenate-before: 3;
 	-webkit-hyphenate-lines: 2;
 	margin-top: 0em !important;
-	margin-bottom: 0 !important;
+	margin-bottom: 10px !important;
 	text-indent: 1em;
 	orphans: 2;
 	widows: 2;
