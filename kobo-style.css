@@ -1,9 +1,8 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
-	margin-right: 0;
+	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-
 	vertical-align: baseline;
 }
 
@@ -13,8 +12,17 @@ table {
 }
 
 @page {
-	margin-top: 30px;
-	margin-bottom: 20px;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+body {
+	font-family: inherit;
+	line-height: 1.35;
+	text-align: justify;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -24,17 +32,17 @@ h1,h2,h3,h4,h5,h6 {
 	adobe-hyphenate: none !important;
 	page-break-after: avoid;
 	page-break-inside: avoid;
-	text-indent: 0px;
+	text-indent: 0;
 	text-align: center;
-   font-family: inherit;
-   font-weight: bold;
-   text-decoration: none !important;
+	font-family: inherit;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 h1 {
 	font-size: 2em;
 	margin-bottom: 2em;
-   text-decoration: none !important;
+	text-decoration: none;
 }
 
 h2 {
@@ -60,12 +68,11 @@ h6 {
 }
 
 /* Do not indent first paragraph. Mobi will need class='first-para' */
-h1+p,h2+p,h3+p,h4+p,h5+p,h6 {
+h1+p,h2+p,h3+p,h4+p,h5+p,h6+p {
 	text-indent: 0;
 }
 
 p {
-	/* paperwhite defaults to sans */
 	font-family: inherit;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
@@ -76,8 +83,8 @@ p {
 	-webkit-hyphenate-after: 3;
 	-webkit-hyphenate-before: 3;
 	-webkit-hyphenate-lines: 2;
-	margin-top: 0em !important;
-	margin-bottom: 10px !important;
+	margin-top: 0;
+	margin-bottom: 0;
 	text-indent: 1em;
 	orphans: 2;
 	widows: 2;
@@ -89,7 +96,7 @@ i {
 }
 
 b {
-   font-family: inherit;
+	font-family: inherit;
 	font-weight: bold;
 }
 
@@ -101,7 +108,7 @@ ul,ol,dl {
 
 li {
 	font-family: inherit;
-	line-height: 1.5em;
+	line-height: 1.35;
 	orphans: 2;
 	widows: 2;
 	text-align: justify;
@@ -111,7 +118,7 @@ li {
 
 li p {
 	/* Fix paragraph indenting inside of lists */
-	text-indent: 0em;
+	text-indent: 0;
 }
 
 dt {
@@ -125,7 +132,7 @@ dd {
 
 dd p {
 	/* Fix paragraph indenting inside of definition lists */
-	text-indent: 0em;
+	text-indent: 0;
 }
 
 blockquote {
@@ -154,19 +161,11 @@ pre {
 }
 
 img {
-   max-width: 100%;
-   max-height: 80%;
-   margin-top: 20px;
-   margin-right: auto;
-   margin-bottom: 20px;
-   margin-left: auto;
-   display: block;
-   border-radius: 0.3em;
-   -webkit-border-radius: 0.3em;
-   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
-   box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
-   box-sizing: border-box;
-   border: rgb(235, 235, 235) 0.5em solid;
+	max-width: 100%;
+	height: auto;
+	margin: 1em auto;
+	display: block;
+	box-sizing: border-box;
 }
 
 p img {
@@ -175,9 +174,7 @@ p img {
 }
 
 figure {
-	/* These first 3 should center figures */
-	padding: 1em;
-	border: 1px solid black;
+	margin: 1em 0;
 	text-align: center;
 }
 
@@ -191,7 +188,6 @@ figure figcaption {
 table {
 	/*width: 100% */
 	page-break-inside: avoid;
-	border: 1px;
 	/* centers on kf8 */
 	margin: 1em auto;
 	border-collapse: collapse;
@@ -207,7 +203,6 @@ th {
 
 td {
 	font-family: inherit;
-	font-size: small;
 	hyphens: none;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
@@ -218,7 +213,7 @@ td {
 	vertical-align: baseline;
 }
 
-td:nth-last-child {
+tr:last-child td {
 	border-bottom: 1px solid black;
 }
 
